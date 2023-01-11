@@ -35,6 +35,12 @@ body {
         padding-right: 90px;
     }
 }
+@media (max-width: 767px) {
+    .xsm-rl-marg {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+}
 
 .fixed {
     position: absolute;
@@ -72,6 +78,11 @@ body {
 }
 .col {
     padding: 30px;
+}
+@media (max-width: 767px) {
+    .col {
+        padding: 40px;
+    }
 }
 /* .col-txt {
     background-color: var(--color-background);
@@ -335,10 +346,19 @@ ul {
     margin-bottom: 20px;
 }
 
+/* 404 error */
+.error-spacer {
+    margin-top: 10rem;
+}
 
 /* index */
 .spacer-index {
-    margin-top: 17rem;
+    margin-top: 16rem;
+}
+@media (min-width: 1200px) {
+    .spacer-bottom {
+        margin-bottom: 5rem;
+    } 
 }
 .spider {
     position: relative;
@@ -354,7 +374,7 @@ ul {
 
 /* instructions*/
 .spacer-instructions {
-    margin-top: 17rem;
+    margin-top: 16rem;
 }
 
 /* home page - graveyard */
@@ -383,6 +403,9 @@ ul {
 }
 .grave-contact {
     transform: translate(260%, 65%);
+}
+.grave-error {
+    transform: translate(150%, 30%);
 }
 .headstone {
     width: 350px;
@@ -441,6 +464,9 @@ ul {
     .grave-contact {
         transform: translate(195%, 65%);
     }
+    .grave-error {
+        transform: translate(110%, 30%);
+    }
     .zombie-hand {
         width: 80px;
     }
@@ -474,6 +500,9 @@ ul {
     }
     .grave-contact {
         transform: translate(220%, 95%);
+    }
+    .grave-error {
+        transform: translate(110%,50%);
     }
     .zombie-hand {
         width: 70px;
@@ -509,6 +538,9 @@ ul {
     .grave-contact {
         transform: translate(200%, 130%);
     }
+    .grave-error {
+        transform: translate(115%, 80%);
+    }
     .zombie-hand {
         width: 70px;
     }
@@ -542,6 +574,9 @@ ul {
     }
     .grave-contact {
         transform: translate(200%, 190%);
+    }
+    .grave-error {
+        transform: translate(115%, 130%);
     }
     .zombie-hand {
         width: 70px;
@@ -579,6 +614,9 @@ ul {
     }
     .grave-contact {
         transform: translate(220%, 220%);
+    }
+    .grave-error {
+        transform: translate(115%, 150%);
     }
     .zombie-hand {
         width: 50px;
@@ -670,6 +708,11 @@ ul {
 .quest-container {
     width: 70%;
 }
+@media (max-width: 767px) {
+    .quest-container {
+        width: 100%;
+    }
+}
 @media (max-width: 992px) {
     .quest-container {
         width: 90%;
@@ -736,13 +779,46 @@ ul {
 .newq-text-box {
     margin-left: 90px;
 }
+@media (max-width: 767px) {
+    .newq-text-box {
+        margin-left: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .newq-text-box {
+        margin-left: 40px;
+    }
+}
+@media (min-width: 900px) {
+    .newq-text-box {
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1000px) {
+    .newq-text-box {
+        margin-left: 50px;
+    }
+}
+@media (min-width: 1100px) {
+    .newq-text-box {
+        margin-left: 60px;
+    }
+}
+@media (min-width: 1200px) {
+    .newq-text-box {
+        margin-left: 90px;
+    }
+}
 .quest-char {
     transform: translate(55%, 0%);
 }
 @media (max-width: 767px) {
     .quest-char {
-        width: 25%;
-        transform: translate(10%,0);
+        width: 20%;
+        transform: translate(10%,45%);
+    }
+    .row-newq {
+        margin-bottom: 5rem;
     }
 }
 @media (min-width: 768px) {
@@ -808,6 +884,11 @@ ul {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+@media (max-width: 767px) {
+    .row-project {
+        margin: 20px;
+    }
+}
 .project-child {
     margin-top: 50px;
     margin-bottom: 100px;
@@ -828,11 +909,59 @@ ul {
     margin-left: 100px;
     margin-right: 80px;
 }
+@media (max-width: 767px) {
+    .tip-box-spacing {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
 .tip-char {
     transform: translate(-70%, 20%);
 }
+@media (max-width: 767px) {
+    .tip-char {
+        width: 125px;
+        transform: translate(-50%,10%);
+    }
+    .tip-char-1 {
+        transform: translate(-75%,20%);
+    }
+}
+@media (min-width: 768px) {
+    .tip-char {
+        width: 200px;
+        transform: translate(-70%,0);
+    }
+}
+@media (min-width: 900px) {
+    .tip-char {
+        width: 225px;
+        transform: translate(-75%,0);
+    }
+}
+@media (min-width: 1000px) {
+    .tip-char {
+        width: 225px;
+        transform: translate(-80%,0);
+    }
+}
+@media (min-width: 1100px) {
+    .tip-char {
+        width: 225px;
+        transform: translate(-80%,0);
+    }
+}
+@media (min-width: 1200px) {
+    .tip-char {
+        width: 225px;
+        transform: translate(-70%,20%);
+    }
+    .tip-char-1 {
+        transform: translate(-60%,15%);
+    }
+}
 .tip-char-2 {
-    transform: translate(-30%, 20%);
+    transform: translate(-20%, 20%);
 }
 .tip-title-parent {
     width: 50%;
@@ -841,9 +970,19 @@ ul {
     margin-left: 50px;
 }
 .text-box {
-    width: 50%;
+    width: 60%;
     padding-left: 40px;
     padding-right: 40px;
+}
+@media (max-width: 767px) {
+    .text-box {
+        width: 100%;
+    }
+}
+@media (max-width: 1000px) {
+    .text-box {
+        width: 80%;
+    }
 }
 .carousel-cptn {
     width: 35%;
@@ -851,6 +990,18 @@ ul {
 .cpn-top {
     margin-right: 48px;
     margin-left: 135px;
+}
+@media (max-width: 767px) {
+    .cpn-top {
+        margin-right: 10px;
+        margin-left: 40px;
+    }
+}
+@media (max-width: 950px) {
+    .cpn-top {
+        margin-right: 20px;
+        margin-left: 90px;
+    }
 }
 .quest-container-2 {
     width: 60%;
@@ -860,17 +1011,60 @@ ul {
     padding: 20px;
     margin: 50px;
 }
+@media (max-width: 767px) {
+    .q-l {
+        margin-right: 5rem;
+    }
+    .q-l-2 {
+        margin-right: 5rem;
+    }
+    .q-r {
+        margin-left: 5rem;
+    }
+}
 @media (min-width: 768px) {
     .q-l {
-        margin-right: 30rem;
+        margin-right: 5rem;
     }
     .q-l-2 {
         margin-right: 10rem;
     }
     .q-r {
-        margin-left: 15rem;
+        margin-left: 5rem;
     }
 }
+@media (min-width: 900px) {
+    .q-l {
+        margin-right: 10rem;
+    }
+    .q-l-2 {
+        margin-right: 5rem;
+    }
+    .q-r {
+        margin-left: 10rem;
+    }
+}
+@media (max-width: 767px) {
+    .proto-gif {
+        height: 250px;
+    }
+}
+@media (min-width: 768px) {
+    .proto-gif {
+        height: 400px;
+    }
+}
+@media (min-width: 900px) {
+    .proto-gif {
+        height: 500px;
+    }
+}
+@media (min-width: 1000px) {
+    .proto-gif {
+        height: 600px;
+    }
+}
+
 
 /* custom scroll bar */
 /* Works on Firefox */
