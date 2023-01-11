@@ -14,6 +14,13 @@
     --shadow-style-accent: 0 0 0.6rem var(--color-accent);
 }
 
+@media (max-width: 767px) {
+    .text-lg {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 body {
     background-color: var(--color-background);
     background-image: url("media/images/icons/stars.png");
@@ -219,39 +226,72 @@ ul {
 }
 
 /* text styling */
+/*
+--text-xsm: 12px;
+--text-sm: 14px;
+--text-smd: 18px;
+--text-md: 24px;
+--text-lg: 36px;
+--text-xlg: 48px; */
 .text-xlg {
     font-family: var(--font-main);
-    font-size: var(--text-xlg);
+    font-size: 48px;
     color: white;
     text-transform: uppercase;
 }
 .text-lg {
     font-family: var(--font-main);
-    font-size: var(--text-lg);
+    font-size: 36px;
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
 .text-md {
     font-family: var(--font-main);
-    font-size: var(--text-md);
+    font-size: 24px;
     color: white;
 }
 .text-smd {
     font-family: var(--font-main);
-    font-size: var(--text-smd);
+    font-size: 18px;
     color: white;
 }
 .text-sm {
     font-family: var(--font-main);
-    font-size: var(--text-sm);
+    font-size: 14px;
     color: white;
 }
 .text-xsm {
     font-family: var(--font-main);
-    font-size: var(--text-xsm);
+    font-size: 12px;
     color: white;
     text-transform: uppercase;
+}
+.btn-text {
+    font-size: 14px;
+}
+@media (max-width: 767px) {
+    .text-xlg {
+        font-size: 36px;
+    }
+    .text-lg {
+        font-size: 28px;
+    }
+    .text-md {
+        font-size: 20px;
+    }
+    .text-smd {
+        font-size: 14px;
+    }
+    .text-sm {
+        font-size: 12px;
+    }
+    .text-xsm {
+        font-size: 8px;
+    }
+    .btn-text {
+        font-size: 12px;
+    }
 }
 .heading {
     text-align: center;
@@ -336,13 +376,16 @@ ul {
     transform: translate(25%, 180%);
 }
 .grave-work {
-    transform: translate(130%, 125%);
+    transform: translate(109%, 93%);
 }
 .grave-resume {
     transform: translate(190%, 65%);
 }
 .grave-contact {
-    transform: translate(315%, 90%);
+    transform: translate(260%, 65%);
+}
+.headstone {
+    width: 350px;
 }
 .grave-text-work {
     position: absolute;
@@ -385,6 +428,176 @@ ul {
 .ghost {
     transform: translate(-130%, 250%);
 }
+@media (max-width: 1199px) {
+    .grave-about {
+        transform: translate(0, 180%);
+    }
+    .grave-work {
+        transform: translate(75%, 93%);
+    }
+    .grave-resume {
+        transform: translate(140%, 65%);
+    }
+    .grave-contact {
+        transform: translate(195%, 65%);
+    }
+    .zombie-hand {
+        width: 80px;
+    }
+    .bat-home {
+        width: 80px;
+        transform: translate(15%, -70%);
+    }
+    .ghost {
+        width: 40px;
+        transform: translate(-150%, 250%);
+    }
+    .thing1 {
+        transform: translate(935%, 1657%);
+    }
+    .thing2 {
+        transform: translate(865%, 1725%);
+    }
+}
+@media (max-width: 1000px) {
+    .headstone {
+        width: 300px;
+    }
+    .grave-about {
+        transform: translate(0%, 220%);
+    }
+    .grave-work {
+        transform: translate(70%, 139%);
+    }
+    .grave-resume {
+        transform: translate(155%, 95%);
+    }
+    .grave-contact {
+        transform: translate(220%, 95%);
+    }
+    .zombie-hand {
+        width: 70px;
+    }
+    .bat-home {
+        width: 80px;
+        transform: translate(15%, -70%);
+    }
+    .ghost {
+        width: 40px;
+        transform: translate(-150%, 250%);
+    }
+    .thing1 {
+        transform: translate(152%, 1700%);
+    }
+    .thing2 {
+        transform: translate(1410%, 1760%);
+    }
+}
+@media (max-width: 900px) {
+    .headstone {
+        width: 250px;
+    }
+    .grave-about {
+        transform: translate(0%, 290%);
+    }
+    .grave-work {
+        transform: translate(60%, 190%);
+    }
+    .grave-resume {
+        transform: translate(140%, 135%);
+    }
+    .grave-contact {
+        transform: translate(200%, 130%);
+    }
+    .zombie-hand {
+        width: 70px;
+    }
+    .bat-home {
+        width: 80px;
+        transform: translate(15%, -70%);
+    }
+    .ghost {
+        width: 40px;
+        transform: translate(-150%, 250%);
+    }
+    .thing1 {
+        transform: translate(102%, 1750%);
+    }
+    .thing2 {
+        transform: translate(1095%, 1790%);
+    }
+}
+@media (max-width: 767px) {
+    .headstone {
+        width: 200px;
+    }
+    .grave-about {
+        transform: translate(0%, 384%);
+    }
+    .grave-work {
+        transform: translate(60%, 255%);
+    }
+    .grave-resume {
+        transform: translate(140%, 200%);
+    }
+    .grave-contact {
+        transform: translate(200%, 190%);
+    }
+    .zombie-hand {
+        width: 70px;
+    }
+    .bat-home {
+        width: 80px;
+        transform: translate(15%, -70%);
+    }
+    .ghost {
+        width: 40px;
+        transform: translate(-150%, 250%);
+    }
+    .thing1 {
+        transform: translate(70%, 1725%);
+    }
+    .thing2 {
+        transform: translate(870%, 1765%);
+    }
+}
+@media (max-width: 600px) {
+    .text-smd {
+        font-size: 10px;
+    }
+    .headstone {
+        width: 150px;
+    }
+    .grave-about {
+        transform: translate(10%, 450%);
+    }
+    .grave-work {
+        transform: translate(80%, 303%);
+    }
+    .grave-resume {
+        transform: translate(160%, 225%);
+    }
+    .grave-contact {
+        transform: translate(220%, 220%);
+    }
+    .zombie-hand {
+        width: 50px;
+    }
+    .bat-home {
+        width: 80px;
+        transform: translate(15%, -70%);
+    }
+    .ghost {
+        width: 40px;
+        transform: translate(-150%, 250%);
+    }
+    .thing1 {
+        transform: translate(70%, 1460%);
+    }
+    .thing2 {
+        transform: translate(750%, 1500%);
+    }
+}
 
 /* resume */
 .row-resume {
@@ -407,6 +620,42 @@ ul {
 }
 .murphy {
     transform: translate(-20%);
+    width: 90px;
+}
+.movie-poster {
+    height: 400px;
+}
+@media (max-width: 1199px) {
+    .murphy {
+        transform: translate(-90%, -40%);
+    }
+    .speech-bubble {
+        transform: translate(120%, -40%);
+    }
+}
+@media (min-width: 1200px) {
+    .murphy {
+       transform: translate(-20%); 
+    }
+}
+@media (max-width: 900px) {
+    .movie-poster {
+        height: 300px;
+    }
+    .speech-bubble {
+        transform: translate(160%, -70%);
+    }
+}
+@media (max-width: 700px) {
+    .movie-poster {
+        height: 200px;
+    }
+    .murphygroup {
+        padding-top: 2rem;
+    }
+    .speech-bubble {
+        transform: translate(160%, -70%);
+    }
 }
 
 /* work */
@@ -485,10 +734,46 @@ ul {
     margin-top: 10rem;
 }
 .newq-text-box {
-    margin-left: 70px;
+    margin-left: 90px;
 }
 .quest-char {
     transform: translate(55%, 0%);
+}
+@media (max-width: 767px) {
+    .quest-char {
+        width: 25%;
+        transform: translate(10%,0);
+    }
+}
+@media (min-width: 768px) {
+    .quest-char {
+        width: 30%;
+        transform: translate(10%,0);
+    }
+}
+@media (min-width: 900px) {
+    .quest-char {
+        width: 35%;
+        transform: translate(20%,0);
+    }
+}
+@media (min-width: 1000px) {
+    .quest-char {
+        width: 40%;
+        transform: translate(40%,0);
+    }
+}
+@media (min-width: 1100px) {
+    .quest-char {
+        width: 40%;
+        transform: translate(55%,0);
+    }
+}
+@media (min-width: 1200px) {
+    .quest-char {
+        width: 45%;
+        transform: translate(55%,0);
+    }
 }
 .pl-45 {
     padding-left: 45px;
