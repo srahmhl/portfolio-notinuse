@@ -359,6 +359,14 @@ ul {
 .heading {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem;
+}
+.subheading {
+    padding-top: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 .heading-left {
     text-align: left;
@@ -797,11 +805,16 @@ ul {
 }
 .quest-body {
     background-color: white;
-    padding-top: 6px;
-    padding-right: 15px;
-    padding-bottom: 6px;
-    padding-left: 15px;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     border: 5px solid black;
+}
+.quest-body-dark {
+    background-color: black;
+    border: 5px solid white;
+    padding: 1rem;
 }
 .quest-obj {
     background-color: black;
@@ -809,10 +822,9 @@ ul {
     border: 5px solid white;
     /* height: 190px; */
 }
-/* .quest-card:hover {
-    box-shadow: var(--shadow-style-accent);
-    transition: all linear 0.25s;
-} */
+.quest-card {
+    width: 75%;
+}
 .arrow-more-work {
     transform: translate(-40%, -90%);
 }
@@ -965,9 +977,6 @@ ul {
         margin-right: 0;
     }
 }
-.tip-char {
-    transform: translate(-70%, 20%);
-}
 @media (max-width: 767px) {
     .tip-char {
         width: 125px;
@@ -1004,7 +1013,7 @@ ul {
 @media (min-width: 1200px) {
     .tip-char {
         width: 225px;
-        transform: translate(-70%,20%);
+        transform: translate(-50%,-10%);
     }
     .tip-char-1 {
         transform: translate(-60%,15%);
