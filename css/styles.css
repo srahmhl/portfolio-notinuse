@@ -61,7 +61,20 @@ body {
 .fixed-behind {
     position: relative;
 }
+.header2 {
+    display: flex;
+    align-items: center;
 
+    position: fixed;
+    top: 0;
+
+}
+.cell2 {
+    text-align: center;
+}
+.cell3 {
+    text-align: right;
+}
 .header {
     margin: 30px;
     display: block;
@@ -70,6 +83,15 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+}
+.header-name {
+    margin: 30px;
+    display: block;
+    align-items: center;
+
+    position: fixed;
+    right: 50;
+    top: 0;
 }
 .icons-header {
     margin: 30px;
@@ -80,10 +102,10 @@ body {
     right: 0;
     top: 0;
 }
-.name-header {
+/* .name-header {
     display: block;
-    /* padding-right: 30px; */
-}
+    /* padding-right: 30px;
+} */
 .header-elem {
     display: inline-block;
 }
