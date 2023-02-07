@@ -30,20 +30,54 @@ section {
 .hidden {
     opacity: 0;
     filter: blur(1px);
-    transition: all 1s;
-    transform: translateX(-100%);
+    transition: all 0.75s;
+    transform: translateY(30%);
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
-    transform: translateX(0);
+    transform: translateY(0);
 }
 
 @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
+}
+/* DEMO-SPECIFIC STYLES */
+.typewriter p {
+    /* color: #fff;
+    font-family: monospace; */
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+
+    /* The typwriter cursor */
+    border-right: .15em solid white;
+    white-space: nowrap; /*Keeps the content on a single line*/
+
+    /* Gives that scrolling effect as the typing happens */
+    margin: 0 auto; 
+
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3s steps(30, end),
+      blink-caret .5s step-end infinite;
+}
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+.delay {
+    transition-delay: 500ms;
 }
 
 .icon-fill {
@@ -413,8 +447,8 @@ ul {
 }
 .subheading {
     padding-top: 3rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 .heading-left {
     text-align: left;
@@ -458,7 +492,7 @@ ul {
 
 /* index */
 .spacer-index {
-    margin-top: 12.5rem;
+    margin-top: 15rem;
     margin-bottom: 10rem;
 }
 @media (min-width: 1200px) {
@@ -1089,7 +1123,7 @@ ul {
     }
     .bat-char {
         width: 225px;
-        transform: translate(250%,-10%);
+        transform: translate(230%,-10%);
     }
     .tip-char-1 {
         transform: translate(-60%,15%);
