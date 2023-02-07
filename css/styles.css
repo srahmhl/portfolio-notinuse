@@ -3,6 +3,7 @@
     --color-background: #100C14;
     --color-accent-2: #6BB867;
     --font-main: "Press Start 2P", cursive;
+    /* --font-main: "Source Code Pro", serif; */
     --font-secondary: 'Syne Mono', monospace;
     --btn-text-size: 14px;
     --text-xsm: 12px;
@@ -11,7 +12,47 @@
     --text-md: 24px;
     --text-lg: 36px;
     --text-xlg: 48px;
-    --shadow-style-accent: 0 0 0.6rem var(--color-accent);
+    --shadow-style-accent: 0 0 0.16 var(--color-accent);
+    --transition-style: all linear 0.20s;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.cell {
+    transition-delay: 200ms;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(1px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.icon-fill {
+    fill: white;
+}
+.header-elem:hover .icon-fill {
+    fill: var(--color-accent);
+    text-shadow: var(--shadow-style-accent);
+    transition: var(--transition-style);
 }
 
 @media (max-width: 767px) {
@@ -26,13 +67,12 @@ body {
     background-image: url("media/images/icons/stars.png");
     background-image: url("media/images/icons/stars.png"), linear-gradient(to bottom, black, #100C14, #392645, #523535);
     background-attachment: fixed;
-    margin-top: 6.5rem; /* replaces header space that went away with the fixed header */
 }
 
 @media (min-width: 768px) {
     .body-spacing {
-        padding-left: 90px;
-        padding-right: 90px;
+        padding-left: 80px;
+        padding-right: 80px;
     }
     .body-spacing-2 {
         padding-left: 120px;
@@ -68,6 +108,9 @@ body {
     position: fixed;
     top: 0;
 
+}
+.cell1 {
+    margin-left: 30px;
 }
 .cell2 {
     text-align: center;
@@ -136,17 +179,22 @@ body {
         padding: 40px;
     }
 }
-/* .col-txt {
-    background-color: var(--color-background);
-} */
+.col-nospace {
+    padding: 0;
+}
 
 hr {
     width: 95%;
     height: 3px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
     background-color: white;
     opacity: 1.0;
+}
+.hr-links {
+    width: 100%;
 }
 .line-dark {
     background-color: black;
@@ -253,7 +301,7 @@ ul {
 .button:hover {
     color: var(--color-accent);
     filter: drop-shadow(var(--shadow-style-accent));
-    transition: all linear 0.25s;
+    transition: var(--transition-style);
 }
 .button a {
     display: block;
@@ -266,7 +314,7 @@ ul {
 .btn-link:hover {
     color: var(--color-accent);
     text-shadow: var(--shadow-style-accent);
-    transition: all linear 0.25s;
+    transition: var(--transition-style);
 }
 .btn-link:active {
     color: var(--color-accent);
@@ -278,7 +326,7 @@ ul {
 .btn-link-dark:hover {
     color: var(--color-accent);
     text-shadow: var(--shadow-style-accent);
-    transition: all linear 0.25s;
+    transition: var(--transition-style);
 }
 .btn-link-dark:active {
     color: var(--color-accent);
@@ -811,6 +859,11 @@ ul {
     padding-right: 3rem;
     border: 5px solid black;
 }
+.important-links {
+    width: 75%;
+    padding-right: 0;
+    padding-left: 0;
+}
 .quest-body-dark {
     background-color: black;
     border: 5px solid white;
@@ -916,13 +969,17 @@ ul {
 .pl-45 {
     padding-left: 45px;
 }
+.pl-70 {
+    padding-left: 70px;
+}
 .quest-title-2 {
     padding-top: 20px;
 }
 .quest-body-2 {
     padding-top: 30px;
     padding-bottom: 14px; /*20-6=14*/
-    padding-right: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 .row-newq {
     margin-top: 5.5rem;
@@ -982,6 +1039,9 @@ ul {
         width: 125px;
         transform: translate(-50%,10%);
     }
+    .bat-char {
+        width: 125px;
+    }
     .tip-char-1 {
         transform: translate(-75%,20%);
     }
@@ -991,11 +1051,17 @@ ul {
         width: 200px;
         transform: translate(-70%,0);
     }
+    .bat-char {
+        width: 200px;
+    }
 }
 @media (min-width: 900px) {
     .tip-char {
         width: 225px;
         transform: translate(-75%,0);
+    }
+    .bat-char {
+        width: 225px;
     }
 }
 @media (min-width: 1000px) {
@@ -1003,17 +1069,27 @@ ul {
         width: 225px;
         transform: translate(-80%,0);
     }
+    .bat-char {
+        width: 225px;
+    }
 }
 @media (min-width: 1100px) {
     .tip-char {
         width: 225px;
         transform: translate(-80%,0);
     }
+    .bat-char {
+        width: 225px;
+    }
 }
 @media (min-width: 1200px) {
     .tip-char {
         width: 225px;
         transform: translate(-50%,-10%);
+    }
+    .bat-char {
+        width: 225px;
+        transform: translate(250%,-10%);
     }
     .tip-char-1 {
         transform: translate(-60%,15%);
