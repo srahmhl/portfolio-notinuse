@@ -439,11 +439,9 @@ ul {
     }
 }
 .heading {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 3rem;
 }
 .subheading {
     padding-top: 3rem;
