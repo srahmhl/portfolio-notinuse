@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+            }
+  
+            header {
+                justify-content: space-between;
+                /* Items are evenly distributed 
+                   in the line; firstitem is on
+                   the start line, last item on
+                   the end line */
+                padding: 5px;
+                position: fixed;
+                overflow: hidden;
+                background-color: rgba(0, 0, 0, 0.7);
+                width: 100%;
+            }
+  
+            .bar {
+                display: flex;
+               /* Use flexbox property for parent 
+                  also known as inline-flex */
+                align-items: center;
+            }
+            .search {
+               /* Take up the rest of the 
+                  remaining space */
+                flex: 1;
+            }
+            .search input {
+                width: 90%;
+            }
+  
+            nav {
+                order: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="bar">
+                    <div class="username" 
+                       style="color: rgb(255, 255, 255); 
+                              font-size: 30px;">
+                    Search here :    
+                    </div>
+                    <div class="search">
+                        <input type="search" 
+                               placeholder="search..." />
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div style="padding: 20px;
+                    background-color: rgba(
+                    135, 206, 235, 0.5); 
+                    height: 1500px;">
+            <h1 style="color: green;">
+                <br />
+                GeeksforGeeks
+            </h1>
+            <h1>Content in Fixed Flexbox
+              Navigation Bar</h1>
+            
+            <h2>Scroll Scroll Scroll......</h2>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write 
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+            <p>Write Something Write Something Write
+              Something Write Something..</p>
+        </div>
+    </body>
+</html>

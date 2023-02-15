@@ -2,8 +2,9 @@
     --color-accent: #FF0000;
     --color-background: #100C14;
     --color-accent-2: #6BB867;
-    --font-main: "Press Start 2P", cursive;
+    --font-header: "Press Start 2P", cursive;
     /* --font-main: "Source Code Pro", serif; */
+    --font-main: "Ubuntu", sans-serif;
     --font-secondary: 'Syne Mono', monospace;
     --btn-text-size: 14px;
     --text-xsm: 12px;
@@ -98,8 +99,9 @@ section {
 
 body {
     background-color: var(--color-background);
-    background-image: url("media/images/icons/stars.png");
-    background-image: url("media/images/icons/stars.png"), linear-gradient(to bottom, black, #100C14, #392645, #523535);
+    /* background-image: url("media/images/icons/stars.png");
+    background-image: url("media/images/icons/stars.png"), linear-gradient(to bottom, black, #100C14, #392645, #523535); */
+    background-image: url("media/images/icons/stars-opaque.png"), linear-gradient(to bottom, black, #100C14, #392645, #523535);
     background-attachment: fixed;
 }
 
@@ -378,42 +380,48 @@ ul {
 --text-md: 24px;
 --text-lg: 36px;
 --text-xlg: 48px; */
+.text-sm-header { /* for text-sm or text-md that's a header */
+    font-family: var(--font-header);
+    font-size: var(--text-sm);
+    color: white;
+}
 .text-xlg {
-    font-family: var(--font-main);
-    font-size: 48px;
+    font-family: var(--font-header);
+    font-size: var(--text-xlg);
     color: white;
     text-transform: uppercase;
 }
 .text-lg {
-    font-family: var(--font-main);
-    font-size: 36px;
+    font-family: var(--font-header);
+    font-size: var(--text-lg);
     color: white;
     text-transform: uppercase;
     text-align: center;
 }
 .text-md {
-    font-family: var(--font-main);
-    font-size: 24px;
+    font-family: var(--font-header);
+    font-size: var(--text-md);
     color: white;
 }
 .text-smd {
     font-family: var(--font-main);
-    font-size: 18px;
+    font-size: var(--text-smd);
     color: white;
 }
 .text-sm {
     font-family: var(--font-main);
-    font-size: 14px;
+    font-size: var(--text-sm);
     color: white;
 }
 .text-xsm {
-    font-family: var(--font-main);
-    font-size: 12px;
+    font-family: var(--font-header);
+    font-size: var(--text-xsm);
     color: white;
     text-transform: uppercase;
 }
 .btn-text {
-    font-size: 14px;
+    font-family: var(--font-header);
+    font-size: var(--text-sm);
 }
 @media (max-width: 767px) {
     .text-xlg {
